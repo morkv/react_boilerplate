@@ -1,0 +1,52 @@
+{
+  "name": "react-container",
+  "version": "1.0.0",
+  "description": "react frontend boilerplate",
+  "main": "index.jsx",
+  "author": "Nicolas Casademont",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel \"/\" --hmr-port 3000 ./src/index.html ",
+    "build": "cross-env NODE_ENV=production parcel build ./src/index.html",
+    "tsc": "cross-env NODE_ENV=development tsc --noEmit",
+    "lint": "eslint -c .eslintrc \"src/**/*.{ts,tsx,js,jsx}\"",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx}'",
+    "semantic": "gulp build --gulpfile ./semantic/gulpfile.js"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.134",
+    "@types/parcel-env": "^0.0.0",
+    "@types/react": "^16.8",
+    "@types/react-dom": "^16.8",
+    "@types/react-router": "^5",
+    "@types/react-router-dom": "^4.3.4",
+    "autoprefixer": "^9.3.1",
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.11",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-router": "^5",
+    "react-router-dom": "^5",
+    "semantic-ui-react": "^0.87.2",
+    "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.1.0",
+    "@typescript-eslint/parser": "^1.1.0",
+    "cross-env": "^5.1.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "prettier": "^1.18.2",
+    "semantic-ui": "^2.4.2"
+  }
+}
